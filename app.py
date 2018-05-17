@@ -11,6 +11,10 @@ def index():
 def hello_world():
     return "Hello World!"
 
+@app.route("/extracredit")
+def extra_credit():
+    return "Made a new route!"
+
 @app.route("/hello/<string:name>/")
 def hello(name):
     quotes = [ "'If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.' -- John Louis von Neumann ",
